@@ -1,0 +1,22 @@
+try:
+    num1, num2 = eval(input("Enter two numbers, seperated by a comma"))
+
+# using multiple excet block for different type of errror
+    result = num1/num2
+    print("result is", result)
+# Except to calculate zerodivisojn error
+
+except ZeroDivisionError:
+    print("Division by zero is error")
+# Except to calculate sunax error
+except SyntaxError:
+    print("comma is missing")
+
+except:
+    print("wrong input")
+
+else:
+    print("no exceptions")
+
+finally:
+    print("this will occur no matter what")
