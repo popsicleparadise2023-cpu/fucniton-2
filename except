@@ -1,0 +1,9 @@
+# Using a try and except
+
+try:
+# Asking for user input
+    number = int(input("Enter a number:"))
+
+#using value error
+except ValueError as ex:
+    print("Exception", ex)
