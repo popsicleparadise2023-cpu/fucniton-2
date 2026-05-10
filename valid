@@ -1,0 +1,12 @@
+valid = False
+
+while not valid: # Uisng nested loop
+ try:
+    n = int(input("Enter a number"))
+     # ENter an even number
+    while n%2==0:
+
+     print("bye")
+    valid = True
+ except ValueError:
+    print("invalid")
